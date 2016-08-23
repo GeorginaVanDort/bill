@@ -1,0 +1,4 @@
+{{#each model as |bill|}}
+  <h1>{{bill.official_title}}</h1>
+  <h1>{{bill.sponsor.title}}{{bill.sponsor.first_name}}{{bill.sponsor.last_name}}</h1>
+{{/each}}

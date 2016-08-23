@@ -7,6 +7,8 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('results', {path: '/results/:keyword'});
+  this.route('sns');
+  this.route('guns');
 });
 
 export default Router;

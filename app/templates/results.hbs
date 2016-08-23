@@ -1,5 +1,7 @@
-<ul>
-  {{#each model as |bill|}}
-  <li>{{bill.short_title}}</li>
-  {{/each}}
-</ul>
+{{#each model as |bill|}}
+  <h2>Short Title: {{bill.short_title}}</h2>
+  <h4>Sponsored by: {{bill.sponsor.title}} {{bill.sponsor.first_name}} {{bill.sponsor.last_name}}</h4>
+  <p>Official Title: {{bill.official_title}}</p>
+  <p>{{bill.bill_id}}</p>
+  <p>Click <a href={{bill.last_version.urls.pdf}}>here</a> to see the bill</p>
+{{/each}}

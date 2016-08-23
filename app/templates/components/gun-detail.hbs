@@ -1,0 +1,10 @@
+<h2>{{gun.short_title}}</h2>
+{{#if details}}
+  <h4>Sponsored by: {{gun.sponsor.title}} {{gun.sponsor.first_name}} {{gun.sponsor.last_name}}</h4>
+  <p>Official Title: {{gun.official_title}}</p>
+  <p>{{gun.gun_id}}</p>
+  <p>Click <a href={{gun.last_version.urls.pdf}}>here</a> to see the gun</p>
+<button {{action 'hideDetails'}}>Hide Details</button>
+{{else}}
+  <button {{action 'showDetails'}}>Show Details</button>
+{{/if}}
