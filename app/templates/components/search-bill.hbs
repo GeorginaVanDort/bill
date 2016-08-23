@@ -1,0 +1,9 @@
+<h1>Bill Search</h1>
+
+<form>
+  <div class="form-group">
+    <label for="keyword">Bill Keyword</label>
+    {{input value=keyword id="keyword"}}
+  </div>
+  <button class="btn btn-success" {{action 'keywordSearch'}}>Submit</button>
+</form>
